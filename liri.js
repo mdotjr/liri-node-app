@@ -1,6 +1,7 @@
 require("dotenv").config();
 var keys = require("./keys.js");
 var twitterAuth = keys.twitterKeys;
+var fs = require('fs');
 
 // node liri.js command , query  
 var command = process.argv[2];
