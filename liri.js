@@ -90,15 +90,7 @@ var movieThis = function(movieQuery) {
           console.log("* Language of the movie:      " + JSON.parse(body).Language);
           console.log("* Plot of the movie:          " + JSON.parse(body).Plot);
           console.log("* Actors in the movie:        " + JSON.parse(body).Actors);
-  
-          // For loop parses through Ratings object to see if there is a RT rating
-          // 	--> and if there is, it will print it
-          for(var i = 0; i < JSON.parse(body).Ratings.length; i++) {
-              if(JSON.parse(body).Ratings[i].Source === "Rotten Tomatoes") {
-                  console.log("* Rotten Tomatoes Rating:     " + JSON.parse(body).Ratings[i].Value);
-                  if(JSON.parse(body).Ratings[i].Website !== undefined) {
-                      console.log("* Rotten Tomatoes URL:        " + JSON.parse(body).Ratings[i].Website);
-                  }
+ 
               }
           }
         }
